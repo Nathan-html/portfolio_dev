@@ -13,7 +13,7 @@ const renderer = new THREE.WebGLRenderer({canvas});
 renderer.setSize( window.innerWidth/2, window.innerHeight );
 
 const loader = new GLTFLoader;
-loader.load('../src/3D/Room.gltf', function (gltf) {
+loader.load('../src/3D/Room.glb', function (gltf) {
 	const root = gltf.scene;
     scene.add(root);
 	console.log('linked with glb')
